@@ -1,2 +1,2 @@
-web: npm start --production
+web: node index.js --production
 
