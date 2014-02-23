@@ -27,7 +27,7 @@ config = {
         // ```
 
         database: {
-            client: 'postgres',
+            client: 'pg',
             connection: {
 		host:'ec2-54-225-103-9.compute-1.amazonaws.com', 
 		user:'xbbnplgvvidjxf',
