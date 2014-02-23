@@ -30,7 +30,7 @@ config = {
             connection: {
                 host:'ec2-54-197-237-231.compute-1.amazonaws.com', 
                 user:'ritrrmmtfdobdi',
-                password:'Hide 7_x5MyTnGHIvhNmSsBys5u-aOx',
+                password:'7_x5MyTnGHIvhNmSsBys5u-aOx',
                 database:'d2iq6v493lir13',
                 port:'5432'
             },
