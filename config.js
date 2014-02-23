@@ -26,13 +26,21 @@ config = {
         //  },
         // ```
 
+
+
+// Host    ec2-54-197-237-231.compute-1.amazonaws.com
+// Database    d2iq6v493lir13
+// User    ritrrmmtfdobdi
+// Port    5432
+// Password    Hide 7_x5MyTnGHIvhNmSsBys5u-aOx
+
         database: {
             client: 'pg',
             connection: {
-		host:'ec2-54-225-103-9.compute-1.amazonaws.com', 
-		user:'xbbnplgvvidjxf',
-		password:'0At09-VU_Lx-enBt6BIfCdFdqu',
-		database:'d8jqc09nas0utc',
+		host:'ec2-54-197-237-231.compute-1.amazonaws.com', 
+		user:'ritrrmmtfdobdi',
+		password:'Hide 7_x5MyTnGHIvhNmSsBys5u-aOx',
+		database:'d2iq6v493lir13',
 		port:'5432'
             },
             debug: false
