@@ -8,7 +8,7 @@ config = {
     // ### Development **(default)**
     development: {
         // The url to use when providing links to the site, E.g. in RSS and email.
-        url: 'wenjie-blog.herokuapp.com',
+        url: 'http://wenjie-blog.herokuapp.com',
 
         // Example mail config
         // Visit http://docs.ghost.org/mail for instructions
@@ -49,7 +49,7 @@ config = {
     // Configure your URL and mail settings here
     production: {
         // The url to use when providing links to the site, E.g. in RSS and email.
-        url: 'wenjie-blog.herokuapp.com',
+        url: 'http://wenjie-blog.herokuapp.com',
 
         // Example mail config
         // Visit http://docs.ghost.org/mail for instructions
