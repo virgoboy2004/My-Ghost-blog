@@ -8,7 +8,7 @@ config = {
     // ### Development **(default)**
     development: {
         // The url to use when providing links to the site, E.g. in RSS and email.
-        url: 'http://wenjie-blog.herokuapp.com',
+        url: 'http://my-ghost-blog.com',
 
         // Example mail config
         // Visit http://docs.ghost.org/mail for instructions
@@ -26,21 +26,17 @@ config = {
         // ```
 
         database: {
-            client: 'postgres',
+            client: 'sqlite3',
             connection: {
-                host:'ec2-54-197-237-231.compute-1.amazonaws.com', 
-                user:'ritrrmmtfdobdi',
-                password:'Hide 7_x5MyTnGHIvhNmSsBys5u-aOx',
-                database:'d2iq6v493lir13',
-                port:'5432'
+                filename: path.join(__dirname, '/content/data/ghost-dev.db')
             },
             debug: false
         },
         server: {
             // Host to be passed to node's `net.Server#listen()`
-            host: '0.0.0.0',
+            host: '127.0.0.1',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
-            port: process.env.PORT
+            port: '2368'
         }
     },
 
