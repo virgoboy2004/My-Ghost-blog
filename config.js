@@ -8,6 +8,7 @@ config = {
     // ### Development **(default)**
     development: {
         // The url to use when providing links to the site, E.g. in RSS and email.
+
         url: 'http://my-ghost-blog.com',
 
         // Example mail config
@@ -26,17 +27,21 @@ config = {
         // ```
 
         database: {
-            client: 'sqlite3',
+            client: 'postgres',
             connection: {
-                filename: path.join(__dirname, '/content/data/ghost-dev.db')
+		host:'ec2-50-17-207-54.compute-1.amazonaws.com', 
+		user:'lyyqcywkuadohg',
+		password:'6YOBxtVl5zWwWZRi_ixEC98RMP',
+		database:'d1p9t6jbj9498p',
+		port:'5432'
             },
             debug: false
         },
         server: {
             // Host to be passed to node's `net.Server#listen()`
-            host: '127.0.0.1',
+            host: '0.0.0.0',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
-            port: '2368'
+            port: process.env.PORT
         }
     },
 
