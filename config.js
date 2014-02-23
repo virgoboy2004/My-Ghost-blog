@@ -8,6 +8,7 @@ config = {
     // ### Development **(default)**
     development: {
         // The url to use when providing links to the site, E.g. in RSS and email.
+
         url: 'http://my-ghost-blog.com',
 
         // Example mail config
@@ -26,9 +27,13 @@ config = {
         // ```
 
         database: {
-            client: 'sqlite3',
+            client: 'postgres',
             connection: {
-                filename: path.join(__dirname, '/content/data/ghost-dev.db')
+		host:'ec2-54-225-103-9.compute-1.amazonaws.com', 
+		user:'xbbnplgvvidjxf',
+		password:'0At09-VU_Lx-enBt6BIfCdFdqu',
+		database:'d8jqc09nas0utc',
+		port:'5432'
             },
             debug: false
         },
